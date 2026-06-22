@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const shouldShow = filter === "all" || categories.includes(filter);
 
-        card.style.display = shouldShow ? "" : "none";
+        card.classList.toggle("hidden", !shouldShow);
       });
     });
   });
