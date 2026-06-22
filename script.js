@@ -1,199 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexander Stuard Moolman | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <nav class="nav">
-      <div class="logo">ASM</div>
-      <button class="menu-btn" id="menuBtn">☰</button>
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const projectCards = document.querySelectorAll(".project-card");
 
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-content">
-        <p class="eyebrow">Open to Remote Worldwide</p>
-        <h1>Alexander Stuard Moolman</h1>
-        <h2>Blockchain Developer | ML Engineer | Quantitative Developer</h2>
-        <p>
-          I build Solana applications, AI-powered trading systems, machine learning pipelines,
-          data dashboards, and production-ready backend tools.
-        </p>
-        <div class="hero-buttons">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" href="#contact">Contact Me</a>
-        </div>
-      </div>
-    </section>
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
 
-    <section id="about" class="section">
-      <div class="section-title">
-        <p class="eyebrow">About</p>
-        <h2>Developer focused on Web3, AI, trading systems, and data.</h2>
-      </div>
-      <p class="wide-text">
-        I am a Computer Science graduate based in Durban, South Africa, with experience across
-        Solana smart contracts, NFT ecosystems, AI agents, quantitative trading engines,
-        machine learning systems, SQL, analytics, and scalable backend architecture.
-      </p>
-    </section>
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+      });
+    });
+  }
 
-    <section id="skills" class="section dark">
-      <div class="section-title">
-        <p class="eyebrow">Skills</p>
-        <h2>Technical stack</h2>
-      </div>
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.getAttribute("data-filter");
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Blockchain</h3>
-          <p>Solana, Anchor, Rust, NFTs, tokenomics, Web3 architecture.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Backend</h3>
-          <p>Python, FastAPI, TypeScript, JavaScript, WebSockets, APIs.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Data & Databases</h3>
-          <p>SQL, PostgreSQL, MySQL, Oracle, SQLite, Pandas, NumPy.</p>
-        </div>
-        <div class="skill-card">
-          <h3>AI & Machine Learning</h3>
-          <p>ML pipelines, AI agents, LLM integration, XGBoost, LightGBM.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Analytics</h3>
-          <p>Power BI, Tableau, dashboards, reporting, data validation.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Tools</h3>
-          <p>Git, GitHub, Azure, VS Code, deployment workflows.</p>
-        </div>
-      </div>
-    </section>
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
 
-    <section id="projects" class="section">
-      <div class="section-title">
-        <p class="eyebrow">Projects</p>
-        <h2>Featured work by sector</h2>
-      </div>
+      projectCards.forEach((card) => {
+        const categories = (card.getAttribute("data-category") || "")
+          .split(" ")
+          .map((category) => category.trim());
 
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="blockchain">Blockchain</button>
-        <button class="filter-btn" data-filter="trading">Trading / Quant</button>
-        <button class="filter-btn" data-filter="ai">AI / ML</button>
-        <button class="filter-btn" data-filter="data">Data Analytics</button>
-        <button class="filter-btn" data-filter="backend">Backend</button>
-      </div>
+        const shouldShow = filter === "all" || categories.includes(filter);
 
-      <div class="project-grid">
-        <article class="project-card" data-category="blockchain">
-          <span class="tag">Blockchain / NFT</span>
-          <h3>NFT MMO Blockchain Ecosystem</h3>
-          <p>
-            Blockchain-powered NFT ecosystem with collectible characters, rarity systems,
-            breeding mechanics, player-owned assets, minting architecture, and SOL tokenomics.
-          </p>
-          <div class="tech">Solana · Anchor · Rust · NFTs · Tokenomics</div>
-        </article>
-
-        <article class="project-card" data-category="trading backend">
-          <span class="tag">Trading / Backend</span>
-          <h3>Polymarket Automated Trading Hub</h3>
-          <p>
-            Async trading infrastructure using APIs, WebSockets, PostgreSQL, Kelly Criterion
-            risk management, and AI-assisted market analysis.
-          </p>
-          <div class="tech">FastAPI · WebSockets · PostgreSQL · Python</div>
-        </article>
-
-        <article class="project-card" data-category="trading backend">
-          <span class="tag">Crypto / Automation</span>
-          <h3>Crypto Wallet Analyzer & Copy Trading Bot</h3>
-          <p>
-            Smart-money wallet tracking, portfolio analytics, automated copy trading,
-            and risk-controlled execution workflows.
-          </p>
-          <div class="tech">Python · APIs · Analytics · Automation</div>
-        </article>
-
-        <article class="project-card" data-category="ai trading">
-          <span class="tag">AI / Quant</span>
-          <h3>Gold Commodity ML Trading Bot</h3>
-          <p>
-            Machine learning trading system using walk-forward validation and automated
-            execution logic for commodity market analysis.
-          </p>
-          <div class="tech">XGBoost · LightGBM · Python · ML</div>
-        </article>
-
-        <article class="project-card" data-category="ai data">
-          <span class="tag">Sports Prediction</span>
-          <h3>Football Match Prediction System</h3>
-          <p>
-            Prediction system with Elo ratings, Dixon-Coles calibration, ML pipelines,
-            and value betting analysis.
-          </p>
-          <div class="tech">Python · ML · Elo · Statistical Modelling</div>
-        </article>
-
-        <article class="project-card" data-category="data">
-          <span class="tag">Data Analytics</span>
-          <h3>Sales Performance Dashboard</h3>
-          <p>
-            SQL and Power BI analytics dashboard focused on revenue, orders, customer value,
-            monthly growth, and business performance reporting.
-          </p>
-          <div class="tech">SQL · Power BI · Excel · Data Cleaning</div>
-        </article>
-      </div>
-    </section>
-
-    <section id="cv" class="section dark">
-      <div class="section-title">
-        <p class="eyebrow">CV</p>
-        <h2>Download my CV</h2>
-      </div>
-      <p class="wide-text">
-        Add your CV PDF to the assets folder and rename it to <strong>cv.pdf</strong>.
-        Then this button will work on GitHub Pages.
-      </p>
-      <a class="btn primary" href="assets/cv.pdf" target="_blank">Download CV</a>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="section-title">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s build something.</h2>
-      </div>
-      <div class="contact-box">
-        <p><strong>Email:</strong> <a href="mailto:stuardmoolman.us@gmail.com">stuardmoolman.us@gmail.com</a></p>
-        <p><strong>Business Email:</strong> <a href="mailto:asmsolutions.za@gmail.com">asmsolutions.za@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+27726525084">+27 72 652 5084</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/asm-sol" target="_blank">github.com/asm-sol</a></p>
-        <p><strong>Location:</strong> Durban, South Africa</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+        card.style.display = shouldShow ? "" : "none";
+      });
+    });
+  });
+});
