@@ -1,32 +1,15 @@
-# Alexander Stuard Moolman Portfolio
+# Solana Blockchain Ticketing Platform
 
-Professional GitHub Pages portfolio.
+## Summary
+A practical on-chain ticketing platform for Solana bounties, focused on tokenized ticket ownership, fair resale, verification, and transparent settlement.
 
-## Structure
+## Current placeholder links
+- GitHub: https://github.com/asm-sol/solana-ticketing-platform
+- Demo: https://asm-sol.github.io/solana-ticketing-platform/
 
-- `index.html` — homepage
-- `style.css` — global styling
-- `script.js` — mobile menu and project filtering
-- `assets/` — CV, profile image, project images
-- `projects/` — sector folders and project case-study pages
-- `docs/` — architecture notes and case study documents
-
-## GitHub Pages Setup
-
-1. Create a repo named `YOURUSERNAME.github.io`
-2. Upload everything in this folder to the repo
-3. Go to Settings → Pages
-4. Source: Deploy from a branch
-5. Branch: `main`
-6. Folder: `/root`
-7. Visit `https://YOURUSERNAME.github.io`
-
-## CV Setup
-
-Add your CV here:
-
-`assets/cv.pdf`
-
-## Update Project Links
-
-Replace `#` in each project page with your GitHub repo and live demo links.
+## Update this project
+1. Replace the GitHub URL with the real repository.
+2. Replace the demo URL with the real deployed link.
+3. Add screenshots to `screenshots/`.
+4. Add diagrams to `images/`.
+5. Update the case study text in `index.html`.

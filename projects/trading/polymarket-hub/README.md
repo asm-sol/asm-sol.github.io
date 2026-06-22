@@ -1,20 +1,15 @@
 # Polymarket Automated Trading Hub
 
 ## Summary
-Async trading infrastructure with market analysis, FastAPI services, WebSockets, PostgreSQL, Kelly Criterion risk management, and AI-assisted decision support.
+An automated prediction-market trading hub with async data ingestion, market analysis, risk management, PostgreSQL persistence, and API-driven execution design.
 
-## Problem
-Prediction-market trading requires reliable data ingestion, risk controls, probability assessment, and fast execution infrastructure.
+## Current placeholder links
+- GitHub: https://github.com/asm-sol/polymarket-automated-trading-hub
+- Demo: https://asm-sol.github.io/polymarket-automated-trading-hub/
 
-## Solution
-Built an automated trading hub architecture with backend APIs, real-time data flow, risk sizing, AI market analysis, and database persistence.
-
-## Tech Stack
-Python, FastAPI, WebSockets, PostgreSQL, AI, Risk Management
-
-## Next Additions
-- Screenshots
-- Architecture diagram
-- GitHub repo link
-- Live demo link
-- Testing notes
+## Update this project
+1. Replace the GitHub URL with the real repository.
+2. Replace the demo URL with the real deployed link.
+3. Add screenshots to `screenshots/`.
+4. Add diagrams to `images/`.
+5. Update the case study text in `index.html`.

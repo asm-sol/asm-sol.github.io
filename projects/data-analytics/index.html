@@ -3,49 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Analytics Projects | Alexander Stuard Moolman</title>
-  <link rel="stylesheet" href="../../style.css" />
+  <title>Sales Performance Dashboard | ASM Portfolio</title>
+  <link rel="stylesheet" href="../../../style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="../../index.html">ASM</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="brand" href="../../../index.html">
+        <img src="../../../assets/logos/asm-logo.jpg" alt="ASM logo" />
+        <div>ASM<span>Project Case Study</span></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="../../index.html#home">Home</a>
-        <a href="../../index.html#projects">Projects</a>
-        <a href="../../index.html#contact">Contact</a>
+        <a href="../../../index.html">Home</a>
+        <a href="../../../index.html#projects">Projects</a>
+        <a href="../../data-analytics/">Sector</a>
+        <a href="../../../index.html#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
     <section class="section project-hero">
-      <p class="breadcrumb"><a href="../../index.html">Home</a> / Projects / Data Analytics</p>
-      <p class="eyebrow">Sector</p>
-      <h1>Data Analytics Projects</h1>
-      <p class="wide-text">Case studies and technical work in this portfolio sector.</p>
+      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Data Analytics</a> / Sales Performance Dashboard</p>
+      <p class="eyebrow">Data Analytics / Business Intelligence</p>
+      <h1>Sales Performance Dashboard</h1>
+      <p class="lead">A business intelligence dashboard project using SQL, Excel, and Power BI to clean sales data, calculate KPIs, and turn raw transactions into business insights.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="https://github.com/asm-sol/sales-performance-dashboard" target="_blank">GitHub Repository</a>
+        <a class="btn secondary" href="https://asm-sol.github.io/sales-performance-dashboard/" target="_blank">Live Demo</a>
+      </div>
     </section>
 
     <section class="section dark">
-      <div class="project-grid">
-        <article class="project-card" data-category="data-analytics">
-          <span class="tag">Data Analytics / BI</span>
-          <h3>Sales Performance Dashboard</h3>
-          <p>SQL and Power BI dashboard focused on revenue, orders, average order value, customer value, monthly growth, and business reporting.</p>
-          <div class="tech">SQL · Power BI · Excel · Data Cleaning · BI</div>
-          <div class="card-actions">
-            <a class="small-link" href="sales-dashboard/">View Case Study →</a>
-          </div>
+      <div class="case-layout">
+        <article class="case-card">
+          <p class="eyebrow">Case Study</p>
+          <h2>Problem and solution</h2>
+
+          <h3>Challenge</h3>
+          <p>Raw sales data is often messy and difficult for business users to interpret. The goal is to transform it into a dashboard that clearly explains performance and growth.</p>
+
+          <br />
+          <h3>Approach</h3>
+          <p>The project uses SQL for cleaning and transformation, Excel for validation where needed, and Power BI for KPI reporting and interactive business dashboards.</p>
+
+          <br />
+          <h3>Key Features</h3>
+          <ul><li>SQL data cleaning and validation</li>
+<li>Revenue, order, and customer KPI calculations</li>
+<li>Average order value and monthly growth analysis</li>
+<li>Power BI dashboard layout</li>
+<li>Business reporting structure</li>
+<li>Portfolio-ready analytics case study</li></ul>
+
+          <h3>Architecture</h3>
+          <ul><li>Raw CSV or database tables are cleaned and validated</li>
+<li>SQL queries calculate KPIs and reporting views</li>
+<li>Power BI connects to transformed data for dashboard visuals</li>
+<li>Final report explains insights, trends, and recommendations</li></ul>
         </article>
+
+        <aside class="case-card">
+          <h3>Project Status</h3>
+          <p>Analytics portfolio project</p>
+
+          <br />
+          <h3>Tech Stack</h3>
+          <div class="meta-list"><span>SQL</span>
+<span>Power BI</span>
+<span>Excel</span>
+<span>Data Cleaning</span>
+<span>DAX</span>
+<span>Business Intelligence</span></div>
+
+          <br />
+          <h3>What to update next</h3>
+          <ul><li>Add dashboard screenshot</li>
+<li>Add SQL cleaning scripts</li>
+<li>Add KPI explanation</li>
+<li>Add Power BI export or report images</li></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="case-card">
+        <p class="eyebrow">Update Guide</p>
+        <h2>How to finish this project page</h2>
+        <p>Update this project by editing this file:</p>
+        <pre class="code-box">projects/data-analytics/sales-dashboard/index.html</pre>
+
+        <h3>Replace these links</h3>
+        <ul>
+          <li>GitHub button: replace <strong>https://github.com/asm-sol/sales-performance-dashboard</strong> with the real repository URL.</li>
+          <li>Live Demo button: replace <strong>https://asm-sol.github.io/sales-performance-dashboard/</strong> with the deployed demo URL.</li>
+        </ul>
+
+        <h3>Add images</h3>
+        <ul>
+          <li>Put screenshots inside <strong>projects/data-analytics/sales-dashboard/screenshots/</strong>.</li>
+          <li>Put architecture diagrams inside <strong>projects/data-analytics/sales-dashboard/images/</strong>.</li>
+          <li>Add image tags to this page once the images are ready.</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
+    <p>© 2026 Alexander Stuard Moolman / ASM Solutions.</p>
   </footer>
 
-  <script src="../../script.js"></script>
+  <script src="../../../script.js"></script>
 </body>
 </html>

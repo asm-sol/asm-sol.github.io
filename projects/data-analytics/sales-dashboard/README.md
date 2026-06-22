@@ -1,20 +1,15 @@
 # Sales Performance Dashboard
 
 ## Summary
-SQL and Power BI dashboard focused on revenue, orders, average order value, customer value, monthly growth, and business reporting.
+A business intelligence dashboard project using SQL, Excel, and Power BI to clean sales data, calculate KPIs, and turn raw transactions into business insights.
 
-## Problem
-Businesses need simple, decision-ready dashboards that turn raw sales data into actionable performance insights.
+## Current placeholder links
+- GitHub: https://github.com/asm-sol/sales-performance-dashboard
+- Demo: https://asm-sol.github.io/sales-performance-dashboard/
 
-## Solution
-Designed an analytics project using SQL cleaning, KPI calculations, and Power BI dashboards for business performance reporting.
-
-## Tech Stack
-SQL, Power BI, Excel, Data Cleaning, BI, Dashboards
-
-## Next Additions
-- Screenshots
-- Architecture diagram
-- GitHub repo link
-- Live demo link
-- Testing notes
+## Update this project
+1. Replace the GitHub URL with the real repository.
+2. Replace the demo URL with the real deployed link.
+3. Add screenshots to `screenshots/`.
+4. Add diagrams to `images/`.
+5. Update the case study text in `index.html`.

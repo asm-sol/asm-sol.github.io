@@ -1,20 +1,15 @@
 # NFT MMO Blockchain Ecosystem
 
 ## Summary
-A blockchain-powered NFT MMO ecosystem with collectible characters, rarity, breeding, player-owned assets, minting architecture, and SOL tokenomics.
+A Solana-powered game economy for a 2D MMO where players explore, capture, breed, battle, mint, and trade NFT creatures and player-owned assets.
 
-## Problem
-Most NFT game concepts focus only on minting and marketplaces. This project explores how ownership, progression, breeding, and gameplay systems can work together in a real game economy.
+## Current placeholder links
+- GitHub: https://github.com/asm-sol/nft-mmo-blockchain-ecosystem
+- Demo: https://asm-sol.github.io/nft-mmo-blockchain-ecosystem/
 
-## Solution
-Designed a Solana-based ecosystem where creatures and players can become NFTs, while gameplay progression, capture, breeding, and battles connect to minting and ownership logic.
-
-## Tech Stack
-Solana, Anchor, Rust, NFTs, Unity, Tokenomics
-
-## Next Additions
-- Screenshots
-- Architecture diagram
-- GitHub repo link
-- Live demo link
-- Testing notes
+## Update this project
+1. Replace the GitHub URL with the real repository.
+2. Replace the demo URL with the real deployed link.
+3. Add screenshots to `screenshots/`.
+4. Add diagrams to `images/`.
+5. Update the case study text in `index.html`.

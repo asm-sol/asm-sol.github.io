@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Polymarket Automated Trading Hub | Alexander Stuard Moolman</title>
+  <title>Polymarket Automated Trading Hub | ASM Portfolio</title>
   <link rel="stylesheet" href="../../../style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="../../../index.html">ASM</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="brand" href="../../../index.html">
+        <img src="../../../assets/logos/asm-logo.jpg" alt="ASM logo" />
+        <div>ASM<span>Project Case Study</span></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="../../../index.html#home">Home</a>
+        <a href="../../../index.html">Home</a>
         <a href="../../../index.html#projects">Projects</a>
-        <a href="../../../index.html#skills">Skills</a>
+        <a href="../../trading/">Sector</a>
         <a href="../../../index.html#contact">Contact</a>
       </div>
     </nav>
@@ -22,71 +25,93 @@
 
   <main>
     <section class="section project-hero">
-      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Trading</a> / Polymarket Automated Trading Hub</p>
-      <p class="eyebrow">Trading / Quant</p>
+      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Trading & Quant</a> / Polymarket Automated Trading Hub</p>
+      <p class="eyebrow">Trading / Quant Infrastructure</p>
       <h1>Polymarket Automated Trading Hub</h1>
-      <p class="wide-text">Async trading infrastructure with market analysis, FastAPI services, WebSockets, PostgreSQL, Kelly Criterion risk management, and AI-assisted decision support.</p>
+      <p class="lead">An automated prediction-market trading hub with async data ingestion, market analysis, risk management, PostgreSQL persistence, and API-driven execution design.</p>
       <div class="hero-buttons">
-        <a class="btn primary" href="#">GitHub</a>
-        <a class="btn secondary" href="#">Live Demo</a>
+        <a class="btn primary" href="https://github.com/asm-sol/polymarket-automated-trading-hub" target="_blank">GitHub Repository</a>
+        <a class="btn secondary" href="https://asm-sol.github.io/polymarket-automated-trading-hub/" target="_blank">Live Demo</a>
       </div>
     </section>
 
     <section class="section dark">
       <div class="case-layout">
-        <div class="case-card">
-          <h2>Case Study</h2>
-          <h3>Problem</h3>
-          <p>Prediction-market trading requires reliable data ingestion, risk controls, probability assessment, and fast execution infrastructure.</p>
+        <article class="case-card">
+          <p class="eyebrow">Case Study</p>
+          <h2>Problem and solution</h2>
+
+          <h3>Challenge</h3>
+          <p>Prediction-market trading requires structured data ingestion, probability assessment, real-time market monitoring, position sizing, and strong risk controls. Without this, automation becomes fragile and dangerous.</p>
+
           <br />
-          <h3>Solution</h3>
-          <p>Built an automated trading hub architecture with backend APIs, real-time data flow, risk sizing, AI market analysis, and database persistence.</p>
+          <h3>Approach</h3>
+          <p>The system is designed as a modular backend: collectors pull market data, analytics services calculate edge, risk modules size positions, and execution services manage orders while persisting all state for review.</p>
+
           <br />
           <h3>Key Features</h3>
-          <ul>
-            <li>Async trading services</li>
-<li>Real-time WebSocket data handling</li>
-<li>Kelly Criterion position sizing</li>
-<li>AI-assisted market analysis</li>
-<li>PostgreSQL-backed trade state and analytics</li>
-          </ul>
-        </div>
+          <ul><li>Async trading infrastructure</li>
+<li>Real-time market and order-book handling</li>
+<li>Kelly Criterion-inspired position sizing</li>
+<li>AI-assisted market summarization and decision support</li>
+<li>PostgreSQL-backed state, metrics, and trade history</li>
+<li>API-first structure for dashboards and bots</li></ul>
+
+          <h3>Architecture</h3>
+          <ul><li>FastAPI backend exposes trading, analytics, and health endpoints</li>
+<li>WebSocket services process live market data</li>
+<li>Risk engine controls exposure, sizing, and trade limits</li>
+<li>Database stores markets, signals, trades, wallet state, and logs</li></ul>
+        </article>
 
         <aside class="case-card">
+          <h3>Project Status</h3>
+          <p>Backend architecture and automation build</p>
+
+          <br />
           <h3>Tech Stack</h3>
-          <div class="meta-list">
-            <span>Python</span>
+          <div class="meta-list"><span>Python</span>
 <span>FastAPI</span>
 <span>WebSockets</span>
 <span>PostgreSQL</span>
 <span>AI</span>
-<span>Risk Management</span>
-          </div>
+<span>Risk Management</span></div>
+
           <br />
-          <h3>Project Status</h3>
-          <p>Portfolio case study starter page. Add screenshots, repo links, architecture diagrams, and demo videos as the project develops.</p>
+          <h3>What to update next</h3>
+          <ul><li>Add screenshots of terminal/dashboard outputs</li>
+<li>Add API route documentation</li>
+<li>Add backtesting result charts</li>
+<li>Add risk management explanation</li></ul>
         </aside>
       </div>
     </section>
 
     <section class="section">
       <div class="case-card">
-        <h2>Architecture Notes</h2>
-        <p>
-          Add your diagram here later. Suggested image path:
-          <strong>architecture.png</strong> inside this project folder.
-        </p>
-        <br />
-        <p>
-          Recommended sections to expand: data flow, smart contract accounts, API services,
-          database schema, frontend flow, risks, testing, and deployment.
-        </p>
+        <p class="eyebrow">Update Guide</p>
+        <h2>How to finish this project page</h2>
+        <p>Update this project by editing this file:</p>
+        <pre class="code-box">projects/trading/polymarket-hub/index.html</pre>
+
+        <h3>Replace these links</h3>
+        <ul>
+          <li>GitHub button: replace <strong>https://github.com/asm-sol/polymarket-automated-trading-hub</strong> with the real repository URL.</li>
+          <li>Live Demo button: replace <strong>https://asm-sol.github.io/polymarket-automated-trading-hub/</strong> with the deployed demo URL.</li>
+        </ul>
+
+        <h3>Add images</h3>
+        <ul>
+          <li>Put screenshots inside <strong>projects/trading/polymarket-hub/screenshots/</strong>.</li>
+          <li>Put architecture diagrams inside <strong>projects/trading/polymarket-hub/images/</strong>.</li>
+          <li>Add image tags to this page once the images are ready.</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
+    <p>© 2026 Alexander Stuard Moolman / ASM Solutions.</p>
   </footer>
 
   <script src="../../../script.js"></script>

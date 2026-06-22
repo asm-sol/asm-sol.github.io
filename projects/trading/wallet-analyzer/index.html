@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crypto Wallet Analyzer &amp; Copy Trading Bot | Alexander Stuard Moolman</title>
+  <title>Crypto Wallet Analyzer &amp; Copy Trading Bot | ASM Portfolio</title>
   <link rel="stylesheet" href="../../../style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="../../../index.html">ASM</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="brand" href="../../../index.html">
+        <img src="../../../assets/logos/asm-logo.jpg" alt="ASM logo" />
+        <div>ASM<span>Project Case Study</span></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="../../../index.html#home">Home</a>
+        <a href="../../../index.html">Home</a>
         <a href="../../../index.html#projects">Projects</a>
-        <a href="../../../index.html#skills">Skills</a>
+        <a href="../../trading/">Sector</a>
         <a href="../../../index.html#contact">Contact</a>
       </div>
     </nav>
@@ -22,71 +25,93 @@
 
   <main>
     <section class="section project-hero">
-      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Trading</a> / Crypto Wallet Analyzer &amp; Copy Trading Bot</p>
-      <p class="eyebrow">Crypto / Automation</p>
+      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Trading & Quant</a> / Crypto Wallet Analyzer &amp; Copy Trading Bot</p>
+      <p class="eyebrow">Crypto / Smart Money Tracking</p>
       <h1>Crypto Wallet Analyzer &amp; Copy Trading Bot</h1>
-      <p class="wide-text">Smart-money wallet tracking, portfolio analytics, automated copy trading, and risk-controlled execution workflows.</p>
+      <p class="lead">A wallet intelligence system that tracks profitable wallets, analyzes portfolio behavior, ranks smart-money activity, and supports risk-controlled copy trading.</p>
       <div class="hero-buttons">
-        <a class="btn primary" href="#">GitHub</a>
-        <a class="btn secondary" href="#">Live Demo</a>
+        <a class="btn primary" href="https://github.com/asm-sol/crypto-wallet-analyzer-copy-bot" target="_blank">GitHub Repository</a>
+        <a class="btn secondary" href="https://asm-sol.github.io/crypto-wallet-analyzer-copy-bot/" target="_blank">Live Demo</a>
       </div>
     </section>
 
     <section class="section dark">
       <div class="case-layout">
-        <div class="case-card">
-          <h2>Case Study</h2>
-          <h3>Problem</h3>
-          <p>Crypto traders often need to identify profitable wallets, understand wallet behavior, and copy trades without blindly taking excessive risk.</p>
+        <article class="case-card">
+          <p class="eyebrow">Case Study</p>
+          <h2>Problem and solution</h2>
+
+          <h3>Challenge</h3>
+          <p>Blindly copying wallets is risky. A useful system must identify wallet quality, filter noise, understand trade history, size positions safely, and provide clear analytics before execution.</p>
+
           <br />
-          <h3>Solution</h3>
-          <p>Created a wallet analytics and copy-trading system concept that ranks wallet behavior, tracks portfolio performance, and applies risk controls to trade execution.</p>
+          <h3>Approach</h3>
+          <p>The project combines wallet tracking, trade history analysis, portfolio metrics, scoring, and automated copy-trading rules. The goal is to follow behavior intelligently rather than copy every transaction.</p>
+
           <br />
           <h3>Key Features</h3>
-          <ul>
-            <li>Smart-money wallet tracking</li>
-<li>Portfolio PnL analysis</li>
-<li>Copy-trading execution logic</li>
-<li>Risk limits and position sizing</li>
+          <ul><li>Smart-money wallet discovery and tracking</li>
+<li>Portfolio PnL, win rate, and trade frequency analysis</li>
+<li>Wallet ranking by performance and consistency</li>
+<li>Copy-trading rules with risk controls</li>
 <li>Dashboard-ready analytics backend</li>
-          </ul>
-        </div>
+<li>Multi-chain expansion planning</li></ul>
+
+          <h3>Architecture</h3>
+          <ul><li>Collectors ingest wallet transactions and token activity</li>
+<li>Analytics engine calculates ROI, win rate, drawdown, and consistency</li>
+<li>Risk module maps source wallet trades to safe user position sizes</li>
+<li>Dashboard/API layer exposes rankings, wallet profiles, and alerts</li></ul>
+        </article>
 
         <aside class="case-card">
+          <h3>Project Status</h3>
+          <p>Analytics and automation system design</p>
+
+          <br />
           <h3>Tech Stack</h3>
-          <div class="meta-list">
-            <span>Python</span>
+          <div class="meta-list"><span>Python</span>
 <span>APIs</span>
+<span>Crypto</span>
 <span>Analytics</span>
 <span>Automation</span>
-<span>Crypto</span>
-<span>Risk Controls</span>
-          </div>
+<span>Risk Controls</span></div>
+
           <br />
-          <h3>Project Status</h3>
-          <p>Portfolio case study starter page. Add screenshots, repo links, architecture diagrams, and demo videos as the project develops.</p>
+          <h3>What to update next</h3>
+          <ul><li>Add wallet leaderboard screenshot</li>
+<li>Add example wallet scoring formula</li>
+<li>Add risk control examples</li>
+<li>Add supported chain/API notes</li></ul>
         </aside>
       </div>
     </section>
 
     <section class="section">
       <div class="case-card">
-        <h2>Architecture Notes</h2>
-        <p>
-          Add your diagram here later. Suggested image path:
-          <strong>architecture.png</strong> inside this project folder.
-        </p>
-        <br />
-        <p>
-          Recommended sections to expand: data flow, smart contract accounts, API services,
-          database schema, frontend flow, risks, testing, and deployment.
-        </p>
+        <p class="eyebrow">Update Guide</p>
+        <h2>How to finish this project page</h2>
+        <p>Update this project by editing this file:</p>
+        <pre class="code-box">projects/trading/wallet-analyzer/index.html</pre>
+
+        <h3>Replace these links</h3>
+        <ul>
+          <li>GitHub button: replace <strong>https://github.com/asm-sol/crypto-wallet-analyzer-copy-bot</strong> with the real repository URL.</li>
+          <li>Live Demo button: replace <strong>https://asm-sol.github.io/crypto-wallet-analyzer-copy-bot/</strong> with the deployed demo URL.</li>
+        </ul>
+
+        <h3>Add images</h3>
+        <ul>
+          <li>Put screenshots inside <strong>projects/trading/wallet-analyzer/screenshots/</strong>.</li>
+          <li>Put architecture diagrams inside <strong>projects/trading/wallet-analyzer/images/</strong>.</li>
+          <li>Add image tags to this page once the images are ready.</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
+    <p>© 2026 Alexander Stuard Moolman / ASM Solutions.</p>
   </footer>
 
   <script src="../../../script.js"></script>

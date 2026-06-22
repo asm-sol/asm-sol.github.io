@@ -1,20 +1,15 @@
 # Football Match Prediction System
 
 ## Summary
-Prediction system with Elo ratings, Dixon-Coles calibration, ML pipelines, and value betting analysis.
+A football prediction engine using Elo ratings, statistical calibration, ML modelling, and value betting analysis for match outcome evaluation.
 
-## Problem
-Football prediction needs more than simple win/loss modelling. It requires calibrated probabilities, team strength modelling, and market-aware evaluation.
+## Current placeholder links
+- GitHub: https://github.com/asm-sol/football-match-prediction-system
+- Demo: https://asm-sol.github.io/football-match-prediction-system/
 
-## Solution
-Built a prediction architecture combining Elo ratings, statistical modelling, ML pipelines, and betting-market value analysis.
-
-## Tech Stack
-Python, Machine Learning, Elo, Dixon-Coles, Statistics, Backtesting
-
-## Next Additions
-- Screenshots
-- Architecture diagram
-- GitHub repo link
-- Live demo link
-- Testing notes
+## Update this project
+1. Replace the GitHub URL with the real repository.
+2. Replace the demo URL with the real deployed link.
+3. Add screenshots to `screenshots/`.
+4. Add diagrams to `images/`.
+5. Update the case study text in `index.html`.

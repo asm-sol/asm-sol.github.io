@@ -1,20 +1,15 @@
-# Blockchain Ticketing Project
+# Solana Blockchain Ticketing Platform
 
 ## Summary
-A Solana ticketing system for real-world bounties, tokenized tickets, fair resale logic, ownership verification, and transparent settlement.
+A practical on-chain ticketing platform for Solana bounties, focused on tokenized ticket ownership, fair resale, verification, and transparent settlement.
 
-## Problem
-Traditional ticketing systems suffer from scalping, fake tickets, poor resale controls, and weak transparency between organizers, buyers, and secondary-market participants.
+## Current placeholder links
+- GitHub: https://github.com/asm-sol/solana-ticketing-platform
+- Demo: https://asm-sol.github.io/solana-ticketing-platform/
 
-## Solution
-Built the core architecture for tokenized ticket ownership where ticket minting, transfers, resale rules, and verification can be enforced through Solana programs.
-
-## Tech Stack
-Solana, Anchor, Rust, NFTs, Ticketing, Bounties
-
-## Next Additions
-- Screenshots
-- Architecture diagram
-- GitHub repo link
-- Live demo link
-- Testing notes
+## Update this project
+1. Replace the GitHub URL with the real repository.
+2. Replace the demo URL with the real deployed link.
+3. Add screenshots to `screenshots/`.
+4. Add diagrams to `images/`.
+5. Update the case study text in `index.html`.

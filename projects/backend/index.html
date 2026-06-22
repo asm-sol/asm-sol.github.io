@@ -3,49 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Backend Projects | Alexander Stuard Moolman</title>
-  <link rel="stylesheet" href="../../style.css" />
+  <title>Backend API Systems | ASM Portfolio</title>
+  <link rel="stylesheet" href="../../../style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="../../index.html">ASM</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="brand" href="../../../index.html">
+        <img src="../../../assets/logos/asm-logo.jpg" alt="ASM logo" />
+        <div>ASM<span>Project Case Study</span></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="../../index.html#home">Home</a>
-        <a href="../../index.html#projects">Projects</a>
-        <a href="../../index.html#contact">Contact</a>
+        <a href="../../../index.html">Home</a>
+        <a href="../../../index.html#projects">Projects</a>
+        <a href="../../backend/">Sector</a>
+        <a href="../../../index.html#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
     <section class="section project-hero">
-      <p class="breadcrumb"><a href="../../index.html">Home</a> / Projects / Backend</p>
-      <p class="eyebrow">Sector</p>
-      <h1>Backend Projects</h1>
-      <p class="wide-text">Case studies and technical work in this portfolio sector.</p>
+      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Backend Systems</a> / Backend API Systems</p>
+      <p class="eyebrow">Backend / API Engineering</p>
+      <h1>Backend API Systems</h1>
+      <p class="lead">A collection of production-style backend patterns using FastAPI, databases, API integrations, automation workflows, and clean deployment-ready structure.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="https://github.com/asm-sol/backend-api-systems" target="_blank">GitHub Repository</a>
+        <a class="btn secondary" href="https://asm-sol.github.io/backend-api-systems/" target="_blank">Live Demo</a>
+      </div>
     </section>
 
     <section class="section dark">
-      <div class="project-grid">
-        <article class="project-card" data-category="backend">
-          <span class="tag">Backend / APIs</span>
-          <h3>Backend API Systems</h3>
-          <p>Production-style backend systems using FastAPI, SQL databases, API integrations, automation workflows, and deployment-ready structure.</p>
-          <div class="tech">Python · FastAPI · SQL · PostgreSQL · APIs</div>
-          <div class="card-actions">
-            <a class="small-link" href="api-systems/">View Case Study →</a>
-          </div>
+      <div class="case-layout">
+        <article class="case-card">
+          <p class="eyebrow">Case Study</p>
+          <h2>Problem and solution</h2>
+
+          <h3>Challenge</h3>
+          <p>Many prototypes fail because the backend is not structured for reliability, testing, integration, or future scaling.</p>
+
+          <br />
+          <h3>Approach</h3>
+          <p>The work focuses on clean API structure, modular services, database-backed workflows, logging, validation, and deployment-ready organization.</p>
+
+          <br />
+          <h3>Key Features</h3>
+          <ul><li>REST API service structure</li>
+<li>Database-backed application logic</li>
+<li>External API integrations</li>
+<li>Automation workflows</li>
+<li>Modular code organization</li>
+<li>Deployment and documentation structure</li></ul>
+
+          <h3>Architecture</h3>
+          <ul><li>API layer handles external requests and validation</li>
+<li>Service layer contains business logic and integrations</li>
+<li>Database layer stores application state and analytics records</li>
+<li>Deployment layer prepares configuration, environment variables, and documentation</li></ul>
         </article>
+
+        <aside class="case-card">
+          <h3>Project Status</h3>
+          <p>Reusable backend portfolio section</p>
+
+          <br />
+          <h3>Tech Stack</h3>
+          <div class="meta-list"><span>Python</span>
+<span>FastAPI</span>
+<span>SQL</span>
+<span>PostgreSQL</span>
+<span>APIs</span>
+<span>GitHub</span></div>
+
+          <br />
+          <h3>What to update next</h3>
+          <ul><li>Add API docs screenshot</li>
+<li>Add endpoint examples</li>
+<li>Add database schema diagram</li>
+<li>Add deployment notes</li></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="case-card">
+        <p class="eyebrow">Update Guide</p>
+        <h2>How to finish this project page</h2>
+        <p>Update this project by editing this file:</p>
+        <pre class="code-box">projects/backend/api-systems/index.html</pre>
+
+        <h3>Replace these links</h3>
+        <ul>
+          <li>GitHub button: replace <strong>https://github.com/asm-sol/backend-api-systems</strong> with the real repository URL.</li>
+          <li>Live Demo button: replace <strong>https://asm-sol.github.io/backend-api-systems/</strong> with the deployed demo URL.</li>
+        </ul>
+
+        <h3>Add images</h3>
+        <ul>
+          <li>Put screenshots inside <strong>projects/backend/api-systems/screenshots/</strong>.</li>
+          <li>Put architecture diagrams inside <strong>projects/backend/api-systems/images/</strong>.</li>
+          <li>Add image tags to this page once the images are ready.</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
+    <p>© 2026 Alexander Stuard Moolman / ASM Solutions.</p>
   </footer>
 
-  <script src="../../script.js"></script>
+  <script src="../../../script.js"></script>
 </body>
 </html>

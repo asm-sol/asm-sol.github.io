@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexander Stuard Moolman | Portfolio</title>
+  <title>Alexander Stuard Moolman | ASM Portfolio</title>
+  <meta name="description" content="Portfolio of Alexander Stuard Moolman: Blockchain Developer, ML Engineer, and Quantitative Developer." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="#home">ASM</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="brand" href="#home">
+        <img src="assets/logos/asm-logo.jpg" alt="ASM logo" />
+        <div>ASM<span>Engineering Portfolio</span></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#sectors">Sectors</a>
-        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#cv">CV</a>
         <a href="#contact">Contact</a>
       </div>
@@ -23,93 +27,89 @@
   </header>
 
   <main>
-    <section id="home" class="hero section">
-      <div class="hero-content">
+    <section id="home" class="section hero">
+      <div>
         <p class="eyebrow">Open to Remote Worldwide</p>
-        <h1>Alexander Stuard Moolman</h1>
-        <h2>Blockchain Developer | ML Engineer | Quantitative Developer</h2>
-        <p>
-          I build Solana applications, AI-powered trading systems, machine learning pipelines,
-          data dashboards, and production-ready backend tools.
+        <h1>Blockchain, AI, trading, and backend systems.</h1>
+        <p class="lead">
+          I’m Alexander Stuard Moolman, a Computer Science graduate from Durban, South Africa.
+          I build Solana applications, NFT ecosystems, AI and machine learning systems,
+          quantitative trading tools, SQL analytics projects, and production-style backend APIs.
         </p>
         <div class="hero-buttons">
           <a class="btn primary" href="#projects">View Projects</a>
           <a class="btn secondary" href="assets/cv.pdf" target="_blank">Download CV</a>
+          <a class="btn secondary" href="https://github.com/asm-sol" target="_blank">GitHub</a>
         </div>
       </div>
-      <aside class="hero-panel">
-        <div class="stat"><strong>8+</strong><span>Featured technical projects</span></div>
-        <div class="stat"><strong>5</strong><span>Portfolio sectors</span></div>
-        <div class="stat"><strong>2022</strong><span>BSc Computer Science graduate</span></div>
+
+      <aside class="hero-card">
+        <img class="hero-logo" src="assets/logos/asm-logo.jpg" alt="ASM logo large" />
+        <div class="hero-stat-grid">
+          <div class="hero-stat"><strong>8</strong><span>Detailed project case studies</span></div>
+          <div class="hero-stat"><strong>5</strong><span>Technical sectors</span></div>
+          <div class="hero-stat"><strong>BSc</strong><span>Computer Science graduate</span></div>
+          <div class="hero-stat"><strong>Remote</strong><span>Worldwide availability</span></div>
+        </div>
       </aside>
     </section>
 
-    <section id="sectors" class="section">
+    <section id="sectors" class="section dark">
       <div class="section-title">
-        <p class="eyebrow">Sectors</p>
-        <h2>Work organized by engineering area</h2>
+        <p class="eyebrow">Portfolio Sectors</p>
+        <h2>Organized by the work I have done.</h2>
+        <p class="wide-text">
+          Each sector contains dedicated project pages with problem statements, architecture notes,
+          technical stack, features, and update instructions.
+        </p>
       </div>
       <div class="sector-grid">
+        
         <a class="sector-card" href="projects/blockchain/">
+          <span class="tag">Blockchain</span>
           <h3>Blockchain</h3>
-          <p>Solana programs, NFT ecosystems, ticketing systems, tokenomics.</p>
-          <span class="small-link">Open sector →</span>
+          <p>Solana programs, NFTs, on-chain ownership, game economies, tokenized real-world systems.</p>
+          <div class="card-actions"><span class="small-link">Open sector →</span></div>
         </a>
+
         <a class="sector-card" href="projects/trading/">
+          <span class="tag">Trading & Quant</span>
           <h3>Trading & Quant</h3>
-          <p>Automated trading, risk management, market analysis, wallet tracking.</p>
-          <span class="small-link">Open sector →</span>
+          <p>Prediction markets, wallet intelligence, automated trading, risk management, and backtesting.</p>
+          <div class="card-actions"><span class="small-link">Open sector →</span></div>
         </a>
+
         <a class="sector-card" href="projects/ai-ml/">
-          <h3>AI & ML</h3>
-          <p>Prediction systems, ML pipelines, calibration, AI-assisted workflows.</p>
-          <span class="small-link">Open sector →</span>
+          <span class="tag">AI & Machine Learning</span>
+          <h3>AI & Machine Learning</h3>
+          <p>Prediction systems, AI-assisted workflows, statistical modelling, and ML pipelines.</p>
+          <div class="card-actions"><span class="small-link">Open sector →</span></div>
         </a>
+
         <a class="sector-card" href="projects/data-analytics/">
+          <span class="tag">Data Analytics</span>
           <h3>Data Analytics</h3>
-          <p>SQL, Power BI, dashboards, KPIs, data cleaning, reporting.</p>
-          <span class="small-link">Open sector →</span>
+          <p>SQL, Power BI, KPI dashboards, data cleaning, and business reporting.</p>
+          <div class="card-actions"><span class="small-link">Open sector →</span></div>
         </a>
+
         <a class="sector-card" href="projects/backend/">
+          <span class="tag">Backend Systems</span>
           <h3>Backend Systems</h3>
-          <p>FastAPI, databases, APIs, integrations, scalable architecture.</p>
-          <span class="small-link">Open sector →</span>
+          <p>FastAPI, databases, API integrations, automation, and scalable project structure.</p>
+          <div class="card-actions"><span class="small-link">Open sector →</span></div>
         </a>
       </div>
     </section>
 
-    <section id="about" class="section dark">
+    <section id="projects" class="section">
       <div class="section-title">
-        <p class="eyebrow">About</p>
-        <h2>Developer focused on Web3, AI, trading systems, and data.</h2>
-      </div>
-      <p class="wide-text">
-        I am a Computer Science graduate based in Durban, South Africa, with experience across
-        Solana smart contracts, NFT ecosystems, AI agents, quantitative trading engines,
-        machine learning systems, SQL, analytics, and scalable backend architecture.
-      </p>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="section-title">
-        <p class="eyebrow">Skills</p>
-        <h2>Technical stack</h2>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-card"><h3>Blockchain</h3><p>Solana, Anchor, Rust, NFTs, tokenomics, Web3 architecture.</p></div>
-        <div class="skill-card"><h3>Backend</h3><p>Python, FastAPI, TypeScript, JavaScript, WebSockets, APIs.</p></div>
-        <div class="skill-card"><h3>Data & Databases</h3><p>SQL, PostgreSQL, MySQL, Oracle, SQLite, Pandas, NumPy.</p></div>
-        <div class="skill-card"><h3>AI & Machine Learning</h3><p>ML pipelines, AI agents, LLM integration, XGBoost, LightGBM.</p></div>
-        <div class="skill-card"><h3>Analytics</h3><p>Power BI, Tableau, dashboards, reporting, data validation.</p></div>
-        <div class="skill-card"><h3>Tools</h3><p>Git, GitHub, Azure, VS Code, deployment workflows.</p></div>
-      </div>
-    </section>
-
-    <section id="projects" class="section dark">
-      <div class="section-title">
-        <p class="eyebrow">Projects</p>
-        <h2>Featured case studies</h2>
+        <p class="eyebrow">Featured Projects</p>
+        <h2>Case studies with real technical content.</h2>
+        <p class="wide-text">
+          Use the filters to view projects by sector. Each card opens a dedicated page you can update
+          with screenshots, repository links, architecture diagrams, and live demos.
+        </p>
       </div>
 
       <div class="filter-buttons">
@@ -122,103 +122,119 @@
       </div>
 
       <div class="project-grid">
-        <article class="project-card" data-category="blockchain">
-          <span class="tag">Blockchain / NFT</span>
+        
+        <article class="project-card" data-category="blockchain backend">
+          <span class="tag">Blockchain / NFT Gaming</span>
           <h3>NFT MMO Blockchain Ecosystem</h3>
-          <p>A blockchain-powered NFT MMO ecosystem with collectible characters, rarity, breeding, player-owned assets, minting architecture, and SOL tokenomics.</p>
-          <div class="tech">Solana · Anchor · Rust · NFTs · Unity</div>
+          <p>A Solana-powered game economy for a 2D MMO where players explore, capture, breed, battle, mint, and trade NFT creatures and player-owned assets.</p>
+          <div class="tech">Solana · Anchor · Rust · Unity · NFTs</div>
           <div class="card-actions">
-            <a class="small-link" href="projects/blockchain/nft-mmo/">View Case Study →</a>
+            <a class="small-link" href="projects/blockchain/nft-mmo/">Read case study →</a>
           </div>
         </article>
 
         <article class="project-card" data-category="blockchain backend">
-          <span class="tag">Solana Bounty / Ticketing</span>
-          <h3>Blockchain Ticketing Project</h3>
-          <p>A Solana ticketing system for real-world bounties, tokenized tickets, fair resale logic, ownership verification, and transparent settlement.</p>
-          <div class="tech">Solana · Anchor · Rust · NFTs · Ticketing</div>
+          <span class="tag">Solana Bounty / Real-World Systems</span>
+          <h3>Solana Blockchain Ticketing Platform</h3>
+          <p>A practical on-chain ticketing platform for Solana bounties, focused on tokenized ticket ownership, fair resale, verification, and transparent settlement.</p>
+          <div class="tech">Solana · Anchor · Rust · TypeScript · NFTs</div>
           <div class="card-actions">
-            <a class="small-link" href="projects/blockchain/solana-ticketing/">View Case Study →</a>
-          </div>
-        </article>
-
-        <article class="project-card" data-category="trading backend">
-          <span class="tag">Trading / Quant</span>
-          <h3>Polymarket Automated Trading Hub</h3>
-          <p>Async trading infrastructure with market analysis, FastAPI services, WebSockets, PostgreSQL, Kelly Criterion risk management, and AI-assisted decision support.</p>
-          <div class="tech">Python · FastAPI · WebSockets · PostgreSQL · AI</div>
-          <div class="card-actions">
-            <a class="small-link" href="projects/trading/polymarket-hub/">View Case Study →</a>
-          </div>
-        </article>
-
-        <article class="project-card" data-category="trading backend">
-          <span class="tag">Crypto / Automation</span>
-          <h3>Crypto Wallet Analyzer &amp; Copy Trading Bot</h3>
-          <p>Smart-money wallet tracking, portfolio analytics, automated copy trading, and risk-controlled execution workflows.</p>
-          <div class="tech">Python · APIs · Analytics · Automation · Crypto</div>
-          <div class="card-actions">
-            <a class="small-link" href="projects/trading/wallet-analyzer/">View Case Study →</a>
+            <a class="small-link" href="projects/blockchain/solana-ticketing/">Read case study →</a>
           </div>
         </article>
 
         <article class="project-card" data-category="trading ai backend">
-          <span class="tag">ML / Quant</span>
-          <h3>Gold Commodity ML Trading Bot</h3>
-          <p>Machine learning trading system using XGBoost, LightGBM, walk-forward validation, and automated execution logic for commodity market analysis.</p>
-          <div class="tech">Python · XGBoost · LightGBM · Pandas · Quant</div>
+          <span class="tag">Trading / Quant Infrastructure</span>
+          <h3>Polymarket Automated Trading Hub</h3>
+          <p>An automated prediction-market trading hub with async data ingestion, market analysis, risk management, PostgreSQL persistence, and API-driven execution design.</p>
+          <div class="tech">Python · FastAPI · WebSockets · PostgreSQL · AI</div>
           <div class="card-actions">
-            <a class="small-link" href="projects/trading/gold-ml-bot/">View Case Study →</a>
+            <a class="small-link" href="projects/trading/polymarket-hub/">Read case study →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="trading ai backend">
+          <span class="tag">Crypto / Smart Money Tracking</span>
+          <h3>Crypto Wallet Analyzer &amp; Copy Trading Bot</h3>
+          <p>A wallet intelligence system that tracks profitable wallets, analyzes portfolio behavior, ranks smart-money activity, and supports risk-controlled copy trading.</p>
+          <div class="tech">Python · APIs · Crypto · Analytics · Automation</div>
+          <div class="card-actions">
+            <a class="small-link" href="projects/trading/wallet-analyzer/">Read case study →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="trading ai backend">
+          <span class="tag">Machine Learning / Quant Trading</span>
+          <h3>Gold Commodity ML Trading Bot</h3>
+          <p>A commodity trading research system using machine learning pipelines, walk-forward validation, model comparison, and automated signal generation.</p>
+          <div class="tech">Python · XGBoost · LightGBM · Pandas · NumPy</div>
+          <div class="card-actions">
+            <a class="small-link" href="projects/trading/gold-ml-bot/">Read case study →</a>
           </div>
         </article>
 
         <article class="project-card" data-category="ai data">
           <span class="tag">AI / Sports Prediction</span>
           <h3>Football Match Prediction System</h3>
-          <p>Prediction system with Elo ratings, Dixon-Coles calibration, ML pipelines, and value betting analysis.</p>
-          <div class="tech">Python · Machine Learning · Elo · Dixon-Coles · Statistics</div>
+          <p>A football prediction engine using Elo ratings, statistical calibration, ML modelling, and value betting analysis for match outcome evaluation.</p>
+          <div class="tech">Python · Machine Learning · Elo · Statistics · Backtesting</div>
           <div class="card-actions">
-            <a class="small-link" href="projects/ai-ml/football-prediction/">View Case Study →</a>
+            <a class="small-link" href="projects/ai-ml/football-prediction/">Read case study →</a>
           </div>
         </article>
 
         <article class="project-card" data-category="data">
-          <span class="tag">Data Analytics / BI</span>
+          <span class="tag">Data Analytics / Business Intelligence</span>
           <h3>Sales Performance Dashboard</h3>
-          <p>SQL and Power BI dashboard focused on revenue, orders, average order value, customer value, monthly growth, and business reporting.</p>
-          <div class="tech">SQL · Power BI · Excel · Data Cleaning · BI</div>
+          <p>A business intelligence dashboard project using SQL, Excel, and Power BI to clean sales data, calculate KPIs, and turn raw transactions into business insights.</p>
+          <div class="tech">SQL · Power BI · Excel · Data Cleaning · DAX</div>
           <div class="card-actions">
-            <a class="small-link" href="projects/data-analytics/sales-dashboard/">View Case Study →</a>
+            <a class="small-link" href="projects/data-analytics/sales-dashboard/">Read case study →</a>
           </div>
         </article>
 
         <article class="project-card" data-category="backend">
-          <span class="tag">Backend / APIs</span>
+          <span class="tag">Backend / API Engineering</span>
           <h3>Backend API Systems</h3>
-          <p>Production-style backend systems using FastAPI, SQL databases, API integrations, automation workflows, and deployment-ready structure.</p>
+          <p>A collection of production-style backend patterns using FastAPI, databases, API integrations, automation workflows, and clean deployment-ready structure.</p>
           <div class="tech">Python · FastAPI · SQL · PostgreSQL · APIs</div>
           <div class="card-actions">
-            <a class="small-link" href="projects/backend/api-systems/">View Case Study →</a>
+            <a class="small-link" href="projects/backend/api-systems/">Read case study →</a>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section dark">
+      <div class="section-title">
+        <p class="eyebrow">Technical Skills</p>
+        <h2>Stack across blockchain, data, AI, and backend engineering.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>Solana & Web3</h3><p>Solana, Anchor, Rust, NFTs, tokenomics, ownership systems, and on-chain architecture.</p></div>
+        <div class="skill-card"><h3>Backend Engineering</h3><p>Python, FastAPI, TypeScript, JavaScript, APIs, WebSockets, service design, and automation.</p></div>
+        <div class="skill-card"><h3>Machine Learning</h3><p>ML pipelines, model validation, XGBoost, LightGBM, AI agents, LLM integration, and prediction systems.</p></div>
+        <div class="skill-card"><h3>Trading Systems</h3><p>Risk controls, position sizing, backtesting, wallet tracking, prediction-market infrastructure, and market analysis.</p></div>
+        <div class="skill-card"><h3>Data Analytics</h3><p>SQL, PostgreSQL, MySQL, Oracle, SQLite, Power BI, Tableau, Excel, Pandas, and NumPy.</p></div>
+        <div class="skill-card"><h3>Tools & Delivery</h3><p>GitHub, VS Code, Azure, documentation, deployment workflows, dashboards, and portfolio-ready project packaging.</p></div>
       </div>
     </section>
 
     <section id="cv" class="section">
       <div class="section-title">
         <p class="eyebrow">CV</p>
-        <h2>Download my CV</h2>
+        <h2>Download my professional CV.</h2>
+        <p class="wide-text">
+          The CV file is included at <strong>assets/cv.pdf</strong>. Replace that file whenever you update your CV.
+        </p>
       </div>
-      <p class="wide-text">
-        Add your CV PDF to the assets folder and rename it to <strong>cv.pdf</strong>.
-      </p>
       <a class="btn primary" href="assets/cv.pdf" target="_blank">Download CV</a>
     </section>
 
-    <section id="contact" class="section contact dark">
+    <section id="contact" class="section dark">
       <div class="section-title">
         <p class="eyebrow">Contact</p>
-        <h2>Let’s build something.</h2>
+        <h2>Available for remote technical opportunities.</h2>
       </div>
       <div class="contact-box">
         <p><strong>Email:</strong> <a href="mailto:stuardmoolman.us@gmail.com">stuardmoolman.us@gmail.com</a></p>
@@ -231,7 +247,7 @@
   </main>
 
   <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
+    <p>© 2026 Alexander Stuard Moolman / ASM Solutions. Built for GitHub Pages.</p>
   </footer>
 
   <script src="script.js"></script>

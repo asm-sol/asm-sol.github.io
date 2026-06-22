@@ -1,20 +1,15 @@
 # Crypto Wallet Analyzer & Copy Trading Bot
 
 ## Summary
-Smart-money wallet tracking, portfolio analytics, automated copy trading, and risk-controlled execution workflows.
+A wallet intelligence system that tracks profitable wallets, analyzes portfolio behavior, ranks smart-money activity, and supports risk-controlled copy trading.
 
-## Problem
-Crypto traders often need to identify profitable wallets, understand wallet behavior, and copy trades without blindly taking excessive risk.
+## Current placeholder links
+- GitHub: https://github.com/asm-sol/crypto-wallet-analyzer-copy-bot
+- Demo: https://asm-sol.github.io/crypto-wallet-analyzer-copy-bot/
 
-## Solution
-Created a wallet analytics and copy-trading system concept that ranks wallet behavior, tracks portfolio performance, and applies risk controls to trade execution.
-
-## Tech Stack
-Python, APIs, Analytics, Automation, Crypto, Risk Controls
-
-## Next Additions
-- Screenshots
-- Architecture diagram
-- GitHub repo link
-- Live demo link
-- Testing notes
+## Update this project
+1. Replace the GitHub URL with the real repository.
+2. Replace the demo URL with the real deployed link.
+3. Add screenshots to `screenshots/`.
+4. Add diagrams to `images/`.
+5. Update the case study text in `index.html`.

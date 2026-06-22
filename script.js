@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menuBtn");
   const navLinks = document.getElementById("navLinks");
@@ -10,27 +11,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-      });
+      link.addEventListener("click", () => navLinks.classList.remove("open"));
     });
   }
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const filter = button.getAttribute("data-filter");
+      const filter = button.dataset.filter;
 
       filterButtons.forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
 
       projectCards.forEach((card) => {
-        const categories = (card.getAttribute("data-category") || "")
-          .split(" ")
-          .map((category) => category.trim());
-
-        const shouldShow = filter === "all" || categories.includes(filter);
-
-        card.classList.toggle("hidden", !shouldShow);
+        const categories = (card.dataset.category || "").split(" ");
+        card.classList.toggle("hidden", !(filter === "all" || categories.includes(filter)));
       });
     });
   });

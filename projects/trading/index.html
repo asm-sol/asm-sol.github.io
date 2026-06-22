@@ -3,67 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trading Projects | Alexander Stuard Moolman</title>
-  <link rel="stylesheet" href="../../style.css" />
+  <title>Gold Commodity ML Trading Bot | ASM Portfolio</title>
+  <link rel="stylesheet" href="../../../style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="../../index.html">ASM</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="brand" href="../../../index.html">
+        <img src="../../../assets/logos/asm-logo.jpg" alt="ASM logo" />
+        <div>ASM<span>Project Case Study</span></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="../../index.html#home">Home</a>
-        <a href="../../index.html#projects">Projects</a>
-        <a href="../../index.html#contact">Contact</a>
+        <a href="../../../index.html">Home</a>
+        <a href="../../../index.html#projects">Projects</a>
+        <a href="../../trading/">Sector</a>
+        <a href="../../../index.html#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
     <section class="section project-hero">
-      <p class="breadcrumb"><a href="../../index.html">Home</a> / Projects / Trading</p>
-      <p class="eyebrow">Sector</p>
-      <h1>Trading Projects</h1>
-      <p class="wide-text">Case studies and technical work in this portfolio sector.</p>
+      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Trading & Quant</a> / Gold Commodity ML Trading Bot</p>
+      <p class="eyebrow">Machine Learning / Quant Trading</p>
+      <h1>Gold Commodity ML Trading Bot</h1>
+      <p class="lead">A commodity trading research system using machine learning pipelines, walk-forward validation, model comparison, and automated signal generation.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="https://github.com/asm-sol/gold-commodity-ml-trading-bot" target="_blank">GitHub Repository</a>
+        <a class="btn secondary" href="https://asm-sol.github.io/gold-commodity-ml-trading-bot/" target="_blank">Live Demo</a>
+      </div>
     </section>
 
     <section class="section dark">
-      <div class="project-grid">
-        <article class="project-card" data-category="trading">
-          <span class="tag">Trading / Quant</span>
-          <h3>Polymarket Automated Trading Hub</h3>
-          <p>Async trading infrastructure with market analysis, FastAPI services, WebSockets, PostgreSQL, Kelly Criterion risk management, and AI-assisted decision support.</p>
-          <div class="tech">Python · FastAPI · WebSockets · PostgreSQL · AI</div>
-          <div class="card-actions">
-            <a class="small-link" href="polymarket-hub/">View Case Study →</a>
-          </div>
+      <div class="case-layout">
+        <article class="case-card">
+          <p class="eyebrow">Case Study</p>
+          <h2>Problem and solution</h2>
+
+          <h3>Challenge</h3>
+          <p>Financial machine learning projects often look good in backtests but fail because of leakage, overfitting, poor validation, or unrealistic execution assumptions.</p>
+
+          <br />
+          <h3>Approach</h3>
+          <p>The system is structured around walk-forward validation, careful feature engineering, model comparison, and realistic evaluation before any automated execution logic is considered.</p>
+
+          <br />
+          <h3>Key Features</h3>
+          <ul><li>Walk-forward validation pipeline</li>
+<li>XGBoost and LightGBM model comparison</li>
+<li>Feature engineering for market data</li>
+<li>Signal generation and confidence scoring</li>
+<li>Backtesting and performance reporting</li>
+<li>Execution-ready architecture planning</li></ul>
+
+          <h3>Architecture</h3>
+          <ul><li>Data layer prepares market candles, indicators, and feature sets</li>
+<li>Training pipeline runs rolling model training and validation windows</li>
+<li>Signal engine converts model outputs into trade candidates</li>
+<li>Reporting layer tracks performance, drawdown, and model stability</li></ul>
         </article>
-        <article class="project-card" data-category="trading">
-          <span class="tag">Crypto / Automation</span>
-          <h3>Crypto Wallet Analyzer &amp; Copy Trading Bot</h3>
-          <p>Smart-money wallet tracking, portfolio analytics, automated copy trading, and risk-controlled execution workflows.</p>
-          <div class="tech">Python · APIs · Analytics · Automation · Crypto</div>
-          <div class="card-actions">
-            <a class="small-link" href="wallet-analyzer/">View Case Study →</a>
-          </div>
-        </article>
-        <article class="project-card" data-category="trading">
-          <span class="tag">ML / Quant</span>
-          <h3>Gold Commodity ML Trading Bot</h3>
-          <p>Machine learning trading system using XGBoost, LightGBM, walk-forward validation, and automated execution logic for commodity market analysis.</p>
-          <div class="tech">Python · XGBoost · LightGBM · Pandas · Quant</div>
-          <div class="card-actions">
-            <a class="small-link" href="gold-ml-bot/">View Case Study →</a>
-          </div>
-        </article>
+
+        <aside class="case-card">
+          <h3>Project Status</h3>
+          <p>ML research and trading pipeline</p>
+
+          <br />
+          <h3>Tech Stack</h3>
+          <div class="meta-list"><span>Python</span>
+<span>XGBoost</span>
+<span>LightGBM</span>
+<span>Pandas</span>
+<span>NumPy</span>
+<span>Backtesting</span></div>
+
+          <br />
+          <h3>What to update next</h3>
+          <ul><li>Add equity curve screenshots</li>
+<li>Add feature list and model metrics</li>
+<li>Add backtest assumptions</li>
+<li>Add risk and deployment notes</li></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="case-card">
+        <p class="eyebrow">Update Guide</p>
+        <h2>How to finish this project page</h2>
+        <p>Update this project by editing this file:</p>
+        <pre class="code-box">projects/trading/gold-ml-bot/index.html</pre>
+
+        <h3>Replace these links</h3>
+        <ul>
+          <li>GitHub button: replace <strong>https://github.com/asm-sol/gold-commodity-ml-trading-bot</strong> with the real repository URL.</li>
+          <li>Live Demo button: replace <strong>https://asm-sol.github.io/gold-commodity-ml-trading-bot/</strong> with the deployed demo URL.</li>
+        </ul>
+
+        <h3>Add images</h3>
+        <ul>
+          <li>Put screenshots inside <strong>projects/trading/gold-ml-bot/screenshots/</strong>.</li>
+          <li>Put architecture diagrams inside <strong>projects/trading/gold-ml-bot/images/</strong>.</li>
+          <li>Add image tags to this page once the images are ready.</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
+    <p>© 2026 Alexander Stuard Moolman / ASM Solutions.</p>
   </footer>
 
-  <script src="../../script.js"></script>
+  <script src="../../../script.js"></script>
 </body>
 </html>

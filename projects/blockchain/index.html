@@ -3,58 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blockchain Projects | Alexander Stuard Moolman</title>
-  <link rel="stylesheet" href="../../style.css" />
+  <title>Solana Blockchain Ticketing Platform | ASM Portfolio</title>
+  <link rel="stylesheet" href="../../../style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="../../index.html">ASM</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="brand" href="../../../index.html">
+        <img src="../../../assets/logos/asm-logo.jpg" alt="ASM logo" />
+        <div>ASM<span>Project Case Study</span></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="../../index.html#home">Home</a>
-        <a href="../../index.html#projects">Projects</a>
-        <a href="../../index.html#contact">Contact</a>
+        <a href="../../../index.html">Home</a>
+        <a href="../../../index.html#projects">Projects</a>
+        <a href="../../blockchain/">Sector</a>
+        <a href="../../../index.html#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
     <section class="section project-hero">
-      <p class="breadcrumb"><a href="../../index.html">Home</a> / Projects / Blockchain</p>
-      <p class="eyebrow">Sector</p>
-      <h1>Blockchain Projects</h1>
-      <p class="wide-text">Case studies and technical work in this portfolio sector.</p>
+      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Blockchain</a> / Solana Blockchain Ticketing Platform</p>
+      <p class="eyebrow">Solana Bounty / Real-World Systems</p>
+      <h1>Solana Blockchain Ticketing Platform</h1>
+      <p class="lead">A practical on-chain ticketing platform for Solana bounties, focused on tokenized ticket ownership, fair resale, verification, and transparent settlement.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="https://github.com/asm-sol/solana-ticketing-platform" target="_blank">GitHub Repository</a>
+        <a class="btn secondary" href="https://asm-sol.github.io/solana-ticketing-platform/" target="_blank">Live Demo</a>
+      </div>
     </section>
 
     <section class="section dark">
-      <div class="project-grid">
-        <article class="project-card" data-category="blockchain">
-          <span class="tag">Blockchain / NFT</span>
-          <h3>NFT MMO Blockchain Ecosystem</h3>
-          <p>A blockchain-powered NFT MMO ecosystem with collectible characters, rarity, breeding, player-owned assets, minting architecture, and SOL tokenomics.</p>
-          <div class="tech">Solana · Anchor · Rust · NFTs · Unity</div>
-          <div class="card-actions">
-            <a class="small-link" href="nft-mmo/">View Case Study →</a>
-          </div>
+      <div class="case-layout">
+        <article class="case-card">
+          <p class="eyebrow">Case Study</p>
+          <h2>Problem and solution</h2>
+
+          <h3>Challenge</h3>
+          <p>Traditional ticketing suffers from fake tickets, scalping, weak resale control, poor transparency, and fragmented verification. A blockchain version must avoid unnecessary complexity while solving the core ownership and resale problems.</p>
+
+          <br />
+          <h3>Approach</h3>
+          <p>The core logic is designed around tokenized tickets with organizer-controlled minting, buyer ownership, transfer rules, resale limits, and event entry verification. The minimal on-chain scope focuses only on what benefits from trustless ownership.</p>
+
+          <br />
+          <h3>Key Features</h3>
+          <ul><li>Event organizer creates ticket supply and pricing rules</li>
+<li>Ticket minting creates verifiable ownership records</li>
+<li>Secondary resale can enforce fair market constraints</li>
+<li>Ticket validation can confirm ownership before entry</li>
+<li>Refund, transfer, and settlement logic can be extended</li>
+<li>Built as a strong Solana bounty/challenge submission concept</li></ul>
+
+          <h3>Architecture</h3>
+          <ul><li>Solana program stores event configuration, ticket supply, ticket ownership, and resale rules</li>
+<li>Frontend lets organizers create events and users buy or resell tickets</li>
+<li>Verification tool scans wallet/ticket ownership at event entry</li>
+<li>Backend/indexer can provide fast search, analytics, and event dashboards</li></ul>
         </article>
-        <article class="project-card" data-category="blockchain">
-          <span class="tag">Solana Bounty / Ticketing</span>
-          <h3>Blockchain Ticketing Project</h3>
-          <p>A Solana ticketing system for real-world bounties, tokenized tickets, fair resale logic, ownership verification, and transparent settlement.</p>
-          <div class="tech">Solana · Anchor · Rust · NFTs · Ticketing</div>
-          <div class="card-actions">
-            <a class="small-link" href="solana-ticketing/">View Case Study →</a>
-          </div>
-        </article>
+
+        <aside class="case-card">
+          <h3>Project Status</h3>
+          <p>Bounty-ready project concept</p>
+
+          <br />
+          <h3>Tech Stack</h3>
+          <div class="meta-list"><span>Solana</span>
+<span>Anchor</span>
+<span>Rust</span>
+<span>TypeScript</span>
+<span>NFTs</span>
+<span>Ticketing</span>
+<span>Bounties</span></div>
+
+          <br />
+          <h3>What to update next</h3>
+          <ul><li>Create Anchor account model</li>
+<li>Implement event creation instruction</li>
+<li>Implement ticket mint and transfer rules</li>
+<li>Add tests for resale limits and verification</li></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="case-card">
+        <p class="eyebrow">Update Guide</p>
+        <h2>How to finish this project page</h2>
+        <p>Update this project by editing this file:</p>
+        <pre class="code-box">projects/blockchain/solana-ticketing/index.html</pre>
+
+        <h3>Replace these links</h3>
+        <ul>
+          <li>GitHub button: replace <strong>https://github.com/asm-sol/solana-ticketing-platform</strong> with the real repository URL.</li>
+          <li>Live Demo button: replace <strong>https://asm-sol.github.io/solana-ticketing-platform/</strong> with the deployed demo URL.</li>
+        </ul>
+
+        <h3>Add images</h3>
+        <ul>
+          <li>Put screenshots inside <strong>projects/blockchain/solana-ticketing/screenshots/</strong>.</li>
+          <li>Put architecture diagrams inside <strong>projects/blockchain/solana-ticketing/images/</strong>.</li>
+          <li>Add image tags to this page once the images are ready.</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
+    <p>© 2026 Alexander Stuard Moolman / ASM Solutions.</p>
   </footer>
 
-  <script src="../../script.js"></script>
+  <script src="../../../script.js"></script>
 </body>
 </html>

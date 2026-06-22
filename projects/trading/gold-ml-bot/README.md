@@ -1,20 +1,15 @@
 # Gold Commodity ML Trading Bot
 
 ## Summary
-Machine learning trading system using XGBoost, LightGBM, walk-forward validation, and automated execution logic for commodity market analysis.
+A commodity trading research system using machine learning pipelines, walk-forward validation, model comparison, and automated signal generation.
 
-## Problem
-Commodity trading systems need robust validation to avoid overfitting and unrealistic backtests.
+## Current placeholder links
+- GitHub: https://github.com/asm-sol/gold-commodity-ml-trading-bot
+- Demo: https://asm-sol.github.io/gold-commodity-ml-trading-bot/
 
-## Solution
-Designed ML pipelines using walk-forward validation, model training, feature engineering, and automated execution architecture.
-
-## Tech Stack
-Python, XGBoost, LightGBM, Pandas, Quant, ML
-
-## Next Additions
-- Screenshots
-- Architecture diagram
-- GitHub repo link
-- Live demo link
-- Testing notes
+## Update this project
+1. Replace the GitHub URL with the real repository.
+2. Replace the demo URL with the real deployed link.
+3. Add screenshots to `screenshots/`.
+4. Add diagrams to `images/`.
+5. Update the case study text in `index.html`.

@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Football Match Prediction System | Alexander Stuard Moolman</title>
+  <title>Football Match Prediction System | ASM Portfolio</title>
   <link rel="stylesheet" href="../../../style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="../../../index.html">ASM</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="brand" href="../../../index.html">
+        <img src="../../../assets/logos/asm-logo.jpg" alt="ASM logo" />
+        <div>ASM<span>Project Case Study</span></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="../../../index.html#home">Home</a>
+        <a href="../../../index.html">Home</a>
         <a href="../../../index.html#projects">Projects</a>
-        <a href="../../../index.html#skills">Skills</a>
+        <a href="../../ai-ml/">Sector</a>
         <a href="../../../index.html#contact">Contact</a>
       </div>
     </nav>
@@ -22,71 +25,93 @@
 
   <main>
     <section class="section project-hero">
-      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Ai Ml</a> / Football Match Prediction System</p>
+      <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">AI & Machine Learning</a> / Football Match Prediction System</p>
       <p class="eyebrow">AI / Sports Prediction</p>
       <h1>Football Match Prediction System</h1>
-      <p class="wide-text">Prediction system with Elo ratings, Dixon-Coles calibration, ML pipelines, and value betting analysis.</p>
+      <p class="lead">A football prediction engine using Elo ratings, statistical calibration, ML modelling, and value betting analysis for match outcome evaluation.</p>
       <div class="hero-buttons">
-        <a class="btn primary" href="#">GitHub</a>
-        <a class="btn secondary" href="#">Live Demo</a>
+        <a class="btn primary" href="https://github.com/asm-sol/football-match-prediction-system" target="_blank">GitHub Repository</a>
+        <a class="btn secondary" href="https://asm-sol.github.io/football-match-prediction-system/" target="_blank">Live Demo</a>
       </div>
     </section>
 
     <section class="section dark">
       <div class="case-layout">
-        <div class="case-card">
-          <h2>Case Study</h2>
-          <h3>Problem</h3>
-          <p>Football prediction needs more than simple win/loss modelling. It requires calibrated probabilities, team strength modelling, and market-aware evaluation.</p>
+        <article class="case-card">
+          <p class="eyebrow">Case Study</p>
+          <h2>Problem and solution</h2>
+
+          <h3>Challenge</h3>
+          <p>Sports prediction requires calibrated probabilities, not just predicted winners. A model must understand team strength, market prices, historical form, and value thresholds.</p>
+
           <br />
-          <h3>Solution</h3>
-          <p>Built a prediction architecture combining Elo ratings, statistical modelling, ML pipelines, and betting-market value analysis.</p>
+          <h3>Approach</h3>
+          <p>The system combines Elo-style team ratings, Dixon-Coles inspired modelling, machine learning features, probability calibration, and backtesting to evaluate whether predictions create real market edge.</p>
+
           <br />
           <h3>Key Features</h3>
-          <ul>
-            <li>Elo-based team strength modelling</li>
-<li>Dixon-Coles calibration</li>
+          <ul><li>Elo-based team strength modelling</li>
+<li>Dixon-Coles style calibration planning</li>
 <li>Machine learning prediction pipeline</li>
-<li>Value betting analysis</li>
+<li>Market odds and value betting analysis</li>
 <li>Backtesting and model evaluation</li>
-          </ul>
-        </div>
+<li>Discord alert distribution planning</li></ul>
+
+          <h3>Architecture</h3>
+          <ul><li>Data collector loads fixtures, results, odds, and league history</li>
+<li>Feature pipeline creates team strength, form, and market variables</li>
+<li>Model layer generates calibrated match probabilities</li>
+<li>Alert layer distributes high-edge selections to Discord</li></ul>
+        </article>
 
         <aside class="case-card">
+          <h3>Project Status</h3>
+          <p>Prediction system and model design</p>
+
+          <br />
           <h3>Tech Stack</h3>
-          <div class="meta-list">
-            <span>Python</span>
+          <div class="meta-list"><span>Python</span>
 <span>Machine Learning</span>
 <span>Elo</span>
-<span>Dixon-Coles</span>
 <span>Statistics</span>
 <span>Backtesting</span>
-          </div>
+<span>Discord Bot</span></div>
+
           <br />
-          <h3>Project Status</h3>
-          <p>Portfolio case study starter page. Add screenshots, repo links, architecture diagrams, and demo videos as the project develops.</p>
+          <h3>What to update next</h3>
+          <ul><li>Add prediction dashboard screenshot</li>
+<li>Add backtest summary table</li>
+<li>Add calibration plots</li>
+<li>Add Discord alert examples</li></ul>
         </aside>
       </div>
     </section>
 
     <section class="section">
       <div class="case-card">
-        <h2>Architecture Notes</h2>
-        <p>
-          Add your diagram here later. Suggested image path:
-          <strong>architecture.png</strong> inside this project folder.
-        </p>
-        <br />
-        <p>
-          Recommended sections to expand: data flow, smart contract accounts, API services,
-          database schema, frontend flow, risks, testing, and deployment.
-        </p>
+        <p class="eyebrow">Update Guide</p>
+        <h2>How to finish this project page</h2>
+        <p>Update this project by editing this file:</p>
+        <pre class="code-box">projects/ai-ml/football-prediction/index.html</pre>
+
+        <h3>Replace these links</h3>
+        <ul>
+          <li>GitHub button: replace <strong>https://github.com/asm-sol/football-match-prediction-system</strong> with the real repository URL.</li>
+          <li>Live Demo button: replace <strong>https://asm-sol.github.io/football-match-prediction-system/</strong> with the deployed demo URL.</li>
+        </ul>
+
+        <h3>Add images</h3>
+        <ul>
+          <li>Put screenshots inside <strong>projects/ai-ml/football-prediction/screenshots/</strong>.</li>
+          <li>Put architecture diagrams inside <strong>projects/ai-ml/football-prediction/images/</strong>.</li>
+          <li>Add image tags to this page once the images are ready.</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
+    <p>© 2026 Alexander Stuard Moolman / ASM Solutions.</p>
   </footer>
 
   <script src="../../../script.js"></script>

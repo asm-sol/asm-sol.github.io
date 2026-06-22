@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NFT MMO Blockchain Ecosystem | Alexander Stuard Moolman</title>
+  <title>NFT MMO Blockchain Ecosystem | ASM Portfolio</title>
   <link rel="stylesheet" href="../../../style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="../../../index.html">ASM</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="brand" href="../../../index.html">
+        <img src="../../../assets/logos/asm-logo.jpg" alt="ASM logo" />
+        <div>ASM<span>Project Case Study</span></div>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="../../../index.html#home">Home</a>
+        <a href="../../../index.html">Home</a>
         <a href="../../../index.html#projects">Projects</a>
-        <a href="../../../index.html#skills">Skills</a>
+        <a href="../../blockchain/">Sector</a>
         <a href="../../../index.html#contact">Contact</a>
       </div>
     </nav>
@@ -23,70 +26,93 @@
   <main>
     <section class="section project-hero">
       <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../">Blockchain</a> / NFT MMO Blockchain Ecosystem</p>
-      <p class="eyebrow">Blockchain / NFT</p>
+      <p class="eyebrow">Blockchain / NFT Gaming</p>
       <h1>NFT MMO Blockchain Ecosystem</h1>
-      <p class="wide-text">A blockchain-powered NFT MMO ecosystem with collectible characters, rarity, breeding, player-owned assets, minting architecture, and SOL tokenomics.</p>
+      <p class="lead">A Solana-powered game economy for a 2D MMO where players explore, capture, breed, battle, mint, and trade NFT creatures and player-owned assets.</p>
       <div class="hero-buttons">
-        <a class="btn primary" href="#">GitHub</a>
-        <a class="btn secondary" href="#">Live Demo</a>
+        <a class="btn primary" href="https://github.com/asm-sol/nft-mmo-blockchain-ecosystem" target="_blank">GitHub Repository</a>
+        <a class="btn secondary" href="https://asm-sol.github.io/nft-mmo-blockchain-ecosystem/" target="_blank">Live Demo</a>
       </div>
     </section>
 
     <section class="section dark">
       <div class="case-layout">
-        <div class="case-card">
-          <h2>Case Study</h2>
-          <h3>Problem</h3>
-          <p>Most NFT game concepts focus only on minting and marketplaces. This project explores how ownership, progression, breeding, and gameplay systems can work together in a real game economy.</p>
+        <article class="case-card">
+          <p class="eyebrow">Case Study</p>
+          <h2>Problem and solution</h2>
+
+          <h3>Challenge</h3>
+          <p>Most blockchain game concepts become either a marketplace with no meaningful gameplay or a normal game with forced NFT features. The challenge was to design a system where blockchain ownership supports the game loop without making the game pay-to-win.</p>
+
           <br />
-          <h3>Solution</h3>
-          <p>Designed a Solana-based ecosystem where creatures and players can become NFTs, while gameplay progression, capture, breeding, and battles connect to minting and ownership logic.</p>
+          <h3>Approach</h3>
+          <p>The project separates gameplay systems from ownership settlement. Battles, exploration, and progression can run off-chain for speed, while minting, ownership, breeding eligibility, and marketplace-ready assets are handled through Solana-based logic.</p>
+
           <br />
           <h3>Key Features</h3>
-          <ul>
-            <li>NFT player and creature ownership model</li>
-<li>Rarity, breeding, and minting systems</li>
-<li>Off-chain gameplay with on-chain asset settlement</li>
-<li>SOL tokenomics and marketplace-ready structure</li>
-<li>Designed for Unity 2D top-down MMO gameplay</li>
-          </ul>
-        </div>
+          <ul><li>Player character and creatures designed as ownable digital assets</li>
+<li>Creature capture, rarity, breeding, and minting design</li>
+<li>Off-chain battles and progression connected to on-chain ownership</li>
+<li>SOL-based minting and tokenomics design</li>
+<li>Unity-ready 2D top-down world and asset pipeline</li>
+<li>Marketplace-compatible NFT ecosystem planning</li></ul>
+
+          <h3>Architecture</h3>
+          <ul><li>Unity client handles gameplay, exploration, UI, and battle presentation</li>
+<li>Backend service manages player profiles, off-chain battle state, progression, and validation</li>
+<li>Solana program manages asset minting, ownership, breeding permissions, and economic rules</li>
+<li>Database stores game state, metadata references, match history, and non-chain gameplay records</li></ul>
+        </article>
 
         <aside class="case-card">
+          <h3>Project Status</h3>
+          <p>Design and prototype architecture</p>
+
+          <br />
           <h3>Tech Stack</h3>
-          <div class="meta-list">
-            <span>Solana</span>
+          <div class="meta-list"><span>Solana</span>
 <span>Anchor</span>
 <span>Rust</span>
-<span>NFTs</span>
 <span>Unity</span>
-<span>Tokenomics</span>
-          </div>
+<span>NFTs</span>
+<span>TypeScript</span>
+<span>Tokenomics</span></div>
+
           <br />
-          <h3>Project Status</h3>
-          <p>Portfolio case study starter page. Add screenshots, repo links, architecture diagrams, and demo videos as the project develops.</p>
+          <h3>What to update next</h3>
+          <ul><li>Add gameplay screenshots from the Unity prototype</li>
+<li>Add Anchor program repo once public</li>
+<li>Add system architecture diagram</li>
+<li>Add tokenomics and rarity tables</li></ul>
         </aside>
       </div>
     </section>
 
     <section class="section">
       <div class="case-card">
-        <h2>Architecture Notes</h2>
-        <p>
-          Add your diagram here later. Suggested image path:
-          <strong>architecture.png</strong> inside this project folder.
-        </p>
-        <br />
-        <p>
-          Recommended sections to expand: data flow, smart contract accounts, API services,
-          database schema, frontend flow, risks, testing, and deployment.
-        </p>
+        <p class="eyebrow">Update Guide</p>
+        <h2>How to finish this project page</h2>
+        <p>Update this project by editing this file:</p>
+        <pre class="code-box">projects/blockchain/nft-mmo/index.html</pre>
+
+        <h3>Replace these links</h3>
+        <ul>
+          <li>GitHub button: replace <strong>https://github.com/asm-sol/nft-mmo-blockchain-ecosystem</strong> with the real repository URL.</li>
+          <li>Live Demo button: replace <strong>https://asm-sol.github.io/nft-mmo-blockchain-ecosystem/</strong> with the deployed demo URL.</li>
+        </ul>
+
+        <h3>Add images</h3>
+        <ul>
+          <li>Put screenshots inside <strong>projects/blockchain/nft-mmo/screenshots/</strong>.</li>
+          <li>Put architecture diagrams inside <strong>projects/blockchain/nft-mmo/images/</strong>.</li>
+          <li>Add image tags to this page once the images are ready.</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Alexander Stuard Moolman. Built for GitHub Pages.</p>
+    <p>© 2026 Alexander Stuard Moolman / ASM Solutions.</p>
   </footer>
 
   <script src="../../../script.js"></script>

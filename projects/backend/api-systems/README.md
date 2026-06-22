@@ -1,20 +1,15 @@
 # Backend API Systems
 
 ## Summary
-Production-style backend systems using FastAPI, SQL databases, API integrations, automation workflows, and deployment-ready structure.
+A collection of production-style backend patterns using FastAPI, databases, API integrations, automation workflows, and clean deployment-ready structure.
 
-## Problem
-Modern applications need clean backend architecture that can scale from prototype to production.
+## Current placeholder links
+- GitHub: https://github.com/asm-sol/backend-api-systems
+- Demo: https://asm-sol.github.io/backend-api-systems/
 
-## Solution
-Built backend services and architecture patterns using APIs, databases, automation, authentication-ready structures, and modular code organization.
-
-## Tech Stack
-Python, FastAPI, SQL, PostgreSQL, APIs, Git
-
-## Next Additions
-- Screenshots
-- Architecture diagram
-- GitHub repo link
-- Live demo link
-- Testing notes
+## Update this project
+1. Replace the GitHub URL with the real repository.
+2. Replace the demo URL with the real deployed link.
+3. Add screenshots to `screenshots/`.
+4. Add diagrams to `images/`.
+5. Update the case study text in `index.html`.
